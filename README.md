@@ -10,6 +10,7 @@ Objective:
 By connecting the dots between performance data, process efficiency, and environmental conditions, the dashboard reveals how every part of manufacturing contributes to the bigger picture of productivity.
 
 🏭 What the Data Revealed
+
 1️⃣ Production Pulse
 
 This year’s YTD production hit 45,642 units, with a cumulative total of 275,803 units — a strong sign of steady output.
