@@ -1,47 +1,156 @@
-Case Study: Manufacturing Analytics Dashboard
+🏭 Manufacturing Operations Analytics Dashboard
+Objective: Assess operational efficiency across production, quality, cost, and environmental metrics using Tableau.
+📌 Overview
 
-⚙️ Turning Factory Floors into Data Stories
+This project analyzes a real-world manufacturing dataset to uncover insights across the entire production lifecycle — from output and machine performance to defect trends, costs, and environmental impact.
 
-Behind every product rolling off the line, there’s a silent story — of machines, people, time, and data.
+Using Tableau, I designed an interactive dashboard that helps identify operational bottlenecks, optimize resource usage, and improve quality and efficiency on the production floor.
 
-Objective:
-👉 To assess operational efficiency across production, quality, cost, and environmental metrics.
+📂 Dataset Description
 
-By connecting the dots between performance data, process efficiency, and environmental conditions, the dashboard reveals how every part of manufacturing contributes to the bigger picture of productivity.
+The dataset contains the following fields:
 
-🏭 What the Data Revealed
+production_id
 
-1️⃣ Production Pulse
+date
 
-This year’s YTD production hit 45,642 units, with a cumulative total of 275,803 units — a strong sign of steady output.
-The Automotive and Textile lines led the way, with Machine ID 2 (Automotive) and Machines 5 & 7 (Textiles) emerging as top performers in throughput.
+product_type
 
-2️⃣ When Quality Speaks
+machine_id
 
-Defects tell their own story.
-A total of 1,574 YTD defects and 1,979 hours of rework showed where teams fought hard to maintain standards.
-The Automotive category recorded the highest defects (2,043), followed by Appliances and Textiles.
+shift
 
-One key insight — Week 45 saw a spike in defects (50) alongside lower production.
-A pattern that hints at machine breakdowns or post-maintenance stabilization, common in high-demand manufacturing cycles.
+units_produced
 
-3️⃣ Costs, Shifts & Control
+production_time_hours
 
-Cumulative production cost crossed $13M, yet maintenance remained under control — with teams completing most repairs ahead of scheduled maintenance hours, minimizing downtime (509 hrs YTD).
-Operator distribution stayed balanced across shifts — day (1,780), night (1,828), and swing (1,885) — ensuring consistent round-the-clock efficiency.
+material_cost_per_unit, material_cost
 
-4️⃣ The Environment Factor
+labour_cost_per_hour, labour_cost
 
-One of the most revealing findings — defects rose when temperature exceeded 20°C and humidity passed 40%, particularly in electronics (497 defects).
-It reinforced how environmental conditions can directly impact product quality and machine stability, emphasizing the need for better climate control in sensitive production zones.
+energy_consumption_kwh
 
-💡 Takeaway
+operator_count
 
-This project reaffirmed how data is the heartbeat of operational excellence.
-When you bring together production, quality, cost, and environmental insights in one dashboard — every metric starts telling a story:
-➡️ Where efficiency thrives
-➡️ Where costs rise
-➡️ And where process improvements can create lasting impact
+maintenance_hours, downtime_hours
 
-Data isn’t just about numbers — it’s about understanding how the factory performs, reacts, and evolves.
-Because when you listen to the data, the machines speak. 🔩📊
+production_volume_cubic_meters
+
+scrap_rate, rework_hours
+
+quality_checks_failed
+
+average_temperature_c
+
+average_humidity_percent
+
+📊 Dashboard Highlights
+🔧 1. Production Metrics
+
+YTD Production: 45,642 units
+
+Cumulative Production: 275,803 units
+
+Top Performing Machines:
+
+Automotive — Machine 2 (3,459 units)
+
+Textile — Machines 5 (2,957) & 7 (2,828)
+
+🧪 2. Quality Metrics
+
+YTD Defects: 1,574
+
+Cumulative Rework Hours: 1,979 hrs
+
+Failed Quality Checks: 2,173
+
+Defects by Category:
+
+Automotive (2,043) — highest
+
+Appliances (1,806)
+
+Textiles (1,787)
+
+Week 45 Insight: Defects spiked to 50 while production dipped → possible machine breakdown or post-maintenance recalibration
+
+💰 3. Cost Metrics
+
+Total Production Cost: $13M
+
+Labour + Material + Energy + Downtime costs analyzed
+
+🛠️ 4. Operational Metrics
+
+YTD Downtime: 509 hrs
+
+Maintenance Performance: Repairs completed ahead of planned schedules
+
+Shift Operator Count:
+
+Day (1,780)
+
+Night (1,828)
+
+Swing (1,885)
+
+🌡️ 5. Environmental Impact
+
+Energy Consumption per Unit: 2.39 kWh
+
+Effect of Temperature & Humidity on Defects:
+
+Defects increase above 20°C and 40% humidity
+
+Electronics category most affected (497 defects)
+
+📖 Storytelling Summary
+
+This dashboard uncovers how machines, people, cost, and environmental conditions together shape overall manufacturing efficiency.
+
+It highlights:
+
+Where production thrives
+
+Where quality dips
+
+How environmental factors impact sensitive product lines
+
+When downtime spikes and why
+
+How maintenance strategy influences output stability
+
+The insights empower manufacturing leaders to take data-backed decisions on process improvement, quality control, and resource allocation.
+
+🛠️ Tools & Technologies
+
+Tableau — Dashboard creation & visual analysis
+
+Python (optional) — EDA & preprocessing (pandas, numpy, matplotlib)
+
+Excel/CSV — Data source
+
+📷 Dashboard Preview
+
+<img width="1185" height="690" alt="Screenshot 2025-10-30 095349" src="https://github.com/user-attachments/assets/556275dc-6aff-4599-bfed-074f5b4e1b7f" />
+
+<img width="1187" height="686" alt="Screenshot 2025-10-30 095426" src="https://github.com/user-attachments/assets/ad1b0be7-1c04-4480-bf2b-626e7c3b1cf9" />
+
+
+🚀 How to Use
+
+Download the Tableau workbook (.twb/.twbx)
+
+Load the dataset into Tableau
+
+Interact with filters, drill-downs, and trend visuals
+
+Explore insights across production, quality, and environmental metrics
+
+🤝 Connect With Me
+
+If you're interested in manufacturing analytics, dashboarding, or process optimization — let's connect!
+
+🔗 LinkedIn: https://www.linkedin.com/in/ankur-jain-1b85bb2b9/
+📧 Email: 27ankurjain@gmail.com
